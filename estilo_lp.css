@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300;500&display=swap');
+
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+
+/*organização do conteúdo*/
+
+main{
+display: flex;
+width: 100%;
+}
+
+
+/*estilização imagem de fundo*/
+
+#imgFundo{
+background-image: url(imagens/consultorio.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+}
+
+/*estilização dos blocos de conteúdo*/
+
+#parte1{
+width: 50%;
+padding: 5% 0 0 5%;
+}
+
+#parte2{
+width: 50%;
+padding: 3% 0 0 4%;
+}
+
+/*estilização do primeiro bloco*/
+
+#titulo1{
+padding-left: 15%;
+font-family: 'Indie Flower', cursive;
+}
+
+#titulo2{
+padding-left: 45%;
+font-family: 'Indie Flower', cursive;
+}
+
+#foto{
+height: 300px;
+width: 300px;
+border-radius: 50%;
+margin: 8% 25%;
+text-align: center;
+}
+
+#subtitulo{
+padding: 3px 0 3px 0;
+text-align: center;
+background: linear-gradient(to right, #F0F8FF, #B0C4DE, #F0F8FF);
+border-radius: 10px;
+font-size: 15px;
+}
+
+
+/*estilização do segundo bloco - formulário*/
+
+fieldset{
+padding: 0 5% 2% 5%;
+color: MidnightBlue;
+border: 1px solid CornflowerBlue;
+margin: 0 50px 0 50px;
+}
+
+#cadastro{
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
+
+table{
+margin: 5% 0 0 2%;
+}
+
+.linhas{
+margin: 0 0 2% 2%;
+}
+
+input[type=text], [type=tel], [type=email], select{
+height: 30px;
+width: 300px;
+border-radius: 10px 10px 10px 10px;
+border: 1px solid CornflowerBlue;
+color: MidnightBlue;
+padding-left: 7px;
+box-shadow: 1px 1px 6px MidnightBlue;
+}
+
+#espaco{
+margin-top: 3px;
+}
+
+textarea{
+margin-top: 3px;
+width: 95%;
+border-radius: 10px 10px 10px 10px;
+border: 1px solid CornflowerBlue;
+color: MidnightBlue;
+padding: 7px 0 0 4px;
+padding-left: 7px;
+box-shadow: 1px 1px 6px MidnightBlue;
+}
+
+input::placeholder{
+color: MidnightBlue;
+}
+
+textarea::placeholder{
+color: MidnightBlue;
+}
+
+#botao{
+text-decoration: none;
+padding: 7px;
+border: 1px solid CornflowerBlue;
+box-shadow: 1px 1px 6px MidnightBlue;
+margin-left: 45%;
+color: MidnightBlue;
+transition: .6s;
+}
+
+#botao:hover{
+background-color: LightSteelBlue;
+}
+
+
+/*responsividade*/
+
+@media screen and (max-width: 1230px){
+#parte1{
+display: none;
+}
+
+#parte2{
+width: 100%;
+padding: 0;
+}
+
+table{
+margin: auto;
+padding-top: 15px;
+}
+
+#centraliz{
+text-align: center;
+}
+
+textarea{
+width: 75%;
+}
+}
+
+
+@media screen and (max-width: 630px){
+table{
+margin: auto;
+padding-top: 15px;
+}
+
+input[type=text], [type=tel], [type=email], select{
+height: 30px;
+width: 200px;
+}
+
+textarea{
+width: 90%;
+}
+}

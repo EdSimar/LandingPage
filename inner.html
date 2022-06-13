@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <title>Cadastro de Pacientes</title>
+    <link rel="icon" type="image" href="imagens/topo.png">
+    <link rel="stylesheet" type="text/css" href="estilo_lp.css">
+</head>
+
+<body id="imgFundo">
+        <main>
+            <section id="parte1">
+                <div>
+                    <h1 id="titulo1">O SEU PROCESSO DE CURA,</h1><h1 id="titulo2">INICIA COM TERAPIA!</h1>
+                        <img id="foto" src="imagens/psicologa.jpg" title="imagem psicóloga" alt="imagem extraída do site freepik">
+                            <h3 id="subtitulo">Faça terapia com quem tem anos de experiência na área</h3>
+                </div>
+            </section>
+            <section id="parte2">
+                    <form>
+                        <fieldset>
+                                <legend id="cadastro">Cadastre-se!</legend>
+                                <br>
+                                <p align="center">Entraremos em contato, em até 48 horas, para agendar a sua primeira sessão <b>gratuita</b></p>
+                                <table>
+                                    <tr>
+                                        <td><label>Nome completo: </label></td>
+                                        <td><input type="text" name="fullname" class="linhas" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Telefone: </label></td>
+                                        <td><input type="tel" name="phoneNumber"  class="linhas" placeholder=" Exemplo: 11 99999-9999" required></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label>Sexo: </label></td>
+                                        <td>                                
+                                            <select name="select"  class="linhas">
+                                                <option selected disabled value="desabilitado">Clique para selecionar</option>
+                                                <option value="female">Feminino</option>
+                                                <option value="male">Masculino</option>
+                                                <option value="nao informado">Prefiro não informar</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="bloco"><label>Email: </label></td>
+                                        <td><input type="email" name="email" class="linhas" placeholder=" Exemplo: email@email.com" required></td>
+                                    </tr>
+                                </table>
+				<div id="centraliz">
+                            <div class="linhas">
+                                <label>Escolha o melhor período para entrarmos em contato:</label><br>
+                                    <input type="radio" name="periodo" value="manha" id="espaco" required>Manhã (entre 09h e 12h)<br>
+                                    <input type="radio" name="periodo" value="tarde">Tarde (entre 12h e 17h)<br>
+                                    <input type="radio" name="periodo" value="noite">Noite (entre 18h e 22h)<br>
+                            </div>
+
+                            <div class="linhas">
+                                <label>Conte-me um pouco sobre o principal assunto que gostaria de tratar nesta sessão:</label><br>
+                                <textarea name="história" rows="5" maxlength="300" placeholder=" Digite a sua mensagem."></textarea>
+                            </div>
+				</div>
+                                <button type="submit" id="botao">Enviar</button>
+                        </fieldset>
+                     </form>
+            </section>
+        </main> 
+</body>
+
+</html>
